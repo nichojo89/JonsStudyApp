@@ -1,4 +1,4 @@
-package com.nicholssoftware.jonsstudyapp
+package com.nicholssoftware.jonsstudyapp.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
