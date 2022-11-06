@@ -36,6 +36,7 @@ android {
     //ViewModel binding is good
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 }
 
@@ -74,4 +75,7 @@ dependencies {
     implementation "com.google.dagger:dagger-android-support:$dagger_version"
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
     kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+
+    //viewmodel databinding
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 }
