@@ -322,7 +322,7 @@
         android:layout_height="74dp"
         android:background="@drawable/round_button"
         android:gravity="center_vertical|center_horizontal"
-        android:text="<<"
+        android:text="BACK"
         android:textColor="#fff"
         android:textSize="26sp"
         app:layout_constraintEnd_toStartOf="@+id/button41"
