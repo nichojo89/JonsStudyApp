@@ -326,13 +326,13 @@
         android:text="BACK"
         android:textColor="#fff"
         android:textSize="26sp"
-        app:layout_constraintEnd_toStartOf="@+id/button41"
+        app:layout_constraintEnd_toStartOf="@+id/btn_calculate"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_decimal"
         app:layout_constraintTop_toTopOf="@+id/btn_zero" />
 
     <Button
-        android:id="@+id/button41"
+        android:id="@+id/btn_calculate"
         android:layout_width="74dp"
         android:layout_height="74dp"
         android:background="@drawable/round_button"
