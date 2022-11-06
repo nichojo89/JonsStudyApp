@@ -1,5 +1,6 @@
 package com.nicholssoftware.jonsstudyapp.framework.di
 
+import com.nicholssoftware.jonsstudyapp.framework.CalculatorViewModel
 import com.nicholssoftware.jonsstudyapp.framework.NoteListViewModel
 import com.nicholssoftware.jonsstudyapp.framework.NoteViewModel
 import dagger.Component
@@ -13,4 +14,5 @@ import dagger.Component
 interface ViewModelComponent {
     fun inject(listViewModel: NoteListViewModel)
     fun inject(noteViewModel: NoteViewModel)
+    fun inject(calculatorViewModel: CalculatorViewModel)
 }
