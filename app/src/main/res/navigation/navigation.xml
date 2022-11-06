@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/calculatorFragment2"
-        android:name="com.nicholssoftware.jonsstudyapp.CalculatorFragment"
+        android:name="com.nicholssoftware.jonsstudyapp.presentation.CalculatorFragment"
         android:label="fragment_calculator"
         tools:layout="@layout/fragment_calculator" />
 </navigation>
