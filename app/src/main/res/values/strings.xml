@@ -4,4 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="create_note">Create a Note</string>
     <string name="delete_note">Delete note</string>
+    <string name="enter_name">Enter your name to start the quiz</string>
+    <string name="welcome">Welcome</string>
+    <string name="name">Name</string>
 </resources>
