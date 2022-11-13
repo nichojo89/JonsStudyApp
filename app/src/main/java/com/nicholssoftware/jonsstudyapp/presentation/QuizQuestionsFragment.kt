@@ -58,6 +58,7 @@ class QuizQuestionsFragment : Fragment(), View.OnClickListener {
 
 
     private fun setQuestion(){
+        binding.svQuestionList.scrollTo(0,0)
         val question=mQuestionsList!![mPosition-1]
         defaultOptionsView()
         binding.btnSubmit.text =
