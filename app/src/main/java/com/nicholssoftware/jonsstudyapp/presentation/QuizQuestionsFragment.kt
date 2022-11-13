@@ -14,6 +14,8 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import com.nicholssoftware.core.data.Question
 import com.nicholssoftware.jonsstudyapp.R
 import com.nicholssoftware.jonsstudyapp.databinding.FragmentQuizQuestionsBinding
@@ -108,18 +110,18 @@ class QuizQuestionsFragment : Fragment(), View.OnClickListener {
                 if(mSelectedPosition==0){
                     mPosition++
 
+                    //has user answers all questions?
                     when{
                         mPosition <= mQuestionsList!!.size ->{
                             setQuestion()
                         } else -> {
-                            //TODO navigate to results view
-//                        val intent = Intent(this,ResultActivity::class.java)
-//                        intent.putExtra(Constants.USER_NAME, mUserName)
-//
-//                        intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
-//                        intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
-//                        startActivity(intent)
-                    }
+                            val action = QuizQuestionsFragmentDirections.actionQuizQuestionsFragmentToQuizResultsFragment(
+                                    mUserName!!,
+                                    mCorrectAnswers,
+                                    mQuestionsList!!.size)
+
+                            Navigation.findNavController(binding.tvQuestion).navigate(action)
+                        }
                     }
                 } else{
                     val question = mQuestionsList?.get(mPosition-1)
